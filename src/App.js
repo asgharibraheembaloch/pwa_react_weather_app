@@ -6,8 +6,7 @@ import './App.css';
 const App = () => {
     const [query, setQuery] = useState('');
     const [weather, setWeather] = useState({});
-    console.log(weather.data.weather[0].icon)
-    
+        
     const search = async (e) => {
         if(e.key === 'Enter') {
             const data = await fetchWeather(query);
